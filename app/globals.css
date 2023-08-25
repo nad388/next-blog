@@ -1,10 +1,17 @@
 * {
-  margin: 0;
-  padding: 0;
-  gap: 25px;
+  box-sizing: border-box;
 }
+
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
   background-color: #c8e4fc;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 h1 {
   text-align: center;
@@ -12,17 +19,15 @@ h1 {
 }
 
 header {
-  display: flex;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
+  padding: 2rem 0;
+  text-align: center;
   background-color: #0c172f;
 }
 
 header a {
   color: white;
-  font-size: 18px;
   text-decoration: none;
+  padding: 0 1rem;
 }
 
 header a:hover {
@@ -38,7 +43,6 @@ header a:hover {
 }
 
 main {
-  /* height: 100vh; */
   min-width: calc(100vh - 85px - 22px);
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -57,15 +61,35 @@ main li {
 }
 
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  padding-bottom: 15px;
   text-align: center;
-  height: 60px;
 }
 
 .active {
   color: #1c75d3;
   cursor: pointer;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+form button {
+  background-color: #2b2e53;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+
+form button:hover {
+  background-color: #2504c1;
+  transition: all ease-in-out 300ms;
+}
+
+input[type="search"] {
+  padding: 0.5rem 1rem;
+  border-radius: 10px 0 0 10px;
+  border: none;
 }
