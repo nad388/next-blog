@@ -93,3 +93,29 @@ input[type="search"] {
   border-radius: 10px 0 0 10px;
   border: none;
 }
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-auth {
+  background-color: #2b2e53;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.btn-auth:hover {
+  background-color: #2504c1;
+  transition: all ease-in-out 300ms;
+}
+
+.login-form {
+  display: grid;
+  gap: 1rem;
+}
